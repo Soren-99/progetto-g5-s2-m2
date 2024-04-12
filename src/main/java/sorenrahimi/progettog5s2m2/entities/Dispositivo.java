@@ -19,4 +19,8 @@ public class Dispositivo {
 
     @Enumerated(EnumType.STRING)
     private StatoDispositivo statoDispositivo;
+
+    @ManyToOne
+    @JoinColumn(name = "dipendenteId")
+    private Dipendente dipendente;
 }
