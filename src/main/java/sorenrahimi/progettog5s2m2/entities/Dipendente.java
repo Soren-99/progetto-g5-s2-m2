@@ -24,7 +24,7 @@ public class Dipendente {
     private String email;
     private String immagine;
 
-    @OneToMany(mappedBy = "author", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "dipendente", cascade = CascadeType.REMOVE)
     @JsonIgnore
     List<Dispositivo> dispositivoList;
 }
